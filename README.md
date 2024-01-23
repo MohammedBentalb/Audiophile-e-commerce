@@ -36,7 +36,11 @@ get valuable feedback from the community.
 
 **Have fun building!** 🚀
 
+# Preview
+~ https://audiophile-e-commerce-navy.vercel.app/category/headphones
+
+
 # Quick demo
 
-- Email : `test1@gmail.com`
-- Password : `123456789`
+- Email: `test1@gmail.com`
+- Password: `123456789`
