@@ -68,7 +68,7 @@ function CheckoutSubmit({ isSubmitting }: { isSubmitting: boolean }) {
         <input
           type="submit"
           value="Continue & Pay"
-          className="button-default-1 mt-2 w-full bg-primary-orange"
+          className={`button-default-1 mt-2 w-full ${ !cartItem || cartItem.length === 0 ? 'bg-primary-orange/60 hover:bg-primary-orange/60' : 'bg-primary-orange'}`}
           disabled={!cartItem || cartItem.length === 0}
         />
       </div>

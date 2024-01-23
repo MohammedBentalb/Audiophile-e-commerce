@@ -108,7 +108,7 @@ function CartItem({
               <div className="flex h-8 w-full max-w-[6rem] items-center bg-primary-lightGray max-[308px]:max-w-[4.5rem]">
                 <label
                   onClick={() => handleDecrease(item)}
-                  className="subTitle inline-block w-8 cursor-pointer text-center font-bold text-black opacity-25 hover:text-primary-orange hover:opacity-100 max-[308px]:w-6"
+                  className="subTitle inline-block w-8 cursor-pointer select-none text-center font-bold text-black opacity-25 hover:text-primary-orange hover:opacity-100 max-[308px]:w-6"
                 >
                   -
                 </label>
@@ -117,7 +117,7 @@ function CartItem({
                 </label>
                 <label
                   onClick={() => handleIncrease(item)}
-                  className="subTitle inline-block w-8 cursor-pointer text-center font-bold text-black opacity-25 hover:text-primary-orange hover:opacity-100 max-[308px]:w-6"
+                  className="subTitle inline-block w-8 cursor-pointer select-none text-center font-bold text-black opacity-25 hover:text-primary-orange hover:opacity-100 max-[308px]:w-6"
                 >
                   +
                 </label>

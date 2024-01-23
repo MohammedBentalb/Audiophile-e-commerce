@@ -10,6 +10,7 @@ type Props = {
   placeholder: string;
   title: string;
   fullW: boolean
+  disabled: boolean
 };
 
 function InputField({
@@ -19,7 +20,8 @@ function InputField({
   type,
   placeholder,
   title,
-  fullW
+  fullW,
+  disabled
 }: Props) {
   return (
     <div className={`flex flex-col gap-2 ${fullW ? '': 'w-full max-w-[19.3125rem]'} max-sm:max-w-none`}>
@@ -27,11 +29,12 @@ function InputField({
         <label htmlFor="email" className="input-label">
           {title}
         </label>
-        {errors[name] && <p className="input-label-error">{ errors[name]?.message?.toString() ?? 'Wrong Format' }</p>}
+        {errors[name] && <p className="input-label-error text-right">{ errors[name]?.message?.toString() ?? 'Wrong Format' }</p>}
       </div>
       <input
         {...register(name, { required: 'required' })}
         type={type}
+        disabled={disabled}
         placeholder={placeholder}
         aria-invalid={(errors && errors[name]) && true || false}
         className={`input-field ${errors.email ? 'border-red-500' : ''} ${fullW ? 'w-full max-w-[39.625rem] ': ''} max-md:w-full max-sm:max-w-none`}
