@@ -37,7 +37,7 @@ get valuable feedback from the community.
 **Have fun building!** 🚀
 
 # Preview
-~ https://audiophile-e-commerce-navy.vercel.app/category/headphones
+~ https://audiophile-e-commerce-navy.vercel.app
 
 
 # Quick demo
