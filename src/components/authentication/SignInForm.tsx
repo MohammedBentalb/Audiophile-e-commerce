@@ -36,7 +36,7 @@ function SignInForm() {
     } catch (e) {
       setError('email', {
         type: 'manual',
-        message: "Invalid Email or Password",
+        message: 'Invalid Email or Password',
       });
       if (e instanceof Error) {
         console.log(e.message);
@@ -95,7 +95,12 @@ function SignInForm() {
           required
           className="h-[40px] w-[250px] rounded-lg p-2"
         />
-        <Link href={'/register'} className='text-white hover:text-primary-orange/60'>Sign Up?</Link>
+        <Link
+          href={'/register'}
+          className="text-white hover:text-primary-orange/60"
+        >
+          Sign Up?
+        </Link>
         <input
           type="submit"
           value="Log In"

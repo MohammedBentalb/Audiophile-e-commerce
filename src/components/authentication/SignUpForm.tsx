@@ -12,7 +12,7 @@ function SignUpForm() {
 
   useEffect(() => {
     router.refresh();
-  }, []);
+  }, [router]);
 
   const {
     handleSubmit,
@@ -104,11 +104,16 @@ function SignUpForm() {
             {errors.confirmPassword.message?.toString()}
           </p>
         )}
-        <Link href={'/log-in'} className='text-white hover:text-primary-orange/60'>Sign In?</Link>
+        <Link
+          href={'/log-in'}
+          className="text-white hover:text-primary-orange/60"
+        >
+          Sign In?
+        </Link>
         <input
           type="submit"
           value="Sign Up"
-          className="button-default-1 bg-primary-orange rounded-lg"
+          className="button-default-1 rounded-lg bg-primary-orange"
           disabled={isSubmitting}
         />
       </form>

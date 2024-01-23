@@ -10,6 +10,7 @@ const handler = NextAuth({
   },
   providers: [
     CredentialsProvider({
+      name: 'credentials',
       credentials: {
         email: {},
         password: {},
