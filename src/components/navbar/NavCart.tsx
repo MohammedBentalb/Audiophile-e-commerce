@@ -40,9 +40,9 @@ function NavCart() {
         }`}
       ></div>
       <span id="cartIcon" ref={target} className="relative w-fit xl:ml-auto">
-       {/*  {cartItem && cartItem.length > 0 && (
+        {cartItem && cartItem.length > 0 && (
           <div className="absolute -right-1 top-0 h-[10px] w-[10px] rounded border border-black bg-primary-orange"></div>
-        )} */}
+        )}
         <Image
           role="img"
           aria-label="menu cart icon"
