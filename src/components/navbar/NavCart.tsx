@@ -35,7 +35,7 @@ function NavCart() {
   return (
     <>
       <div
-        className={`absolute right-0 top-24 h-screen w-screen bg-black/60 transition-opacity duration-200 ease-out max-lg:top-20 ${
+        className={`absolute right-0 top-[5.95rem] h-screen w-screen bg-black/60 transition-opacity duration-200 ease-out max-lg:top-[5.65rem] max-md:top-[5.58rem] max-sm:top-[5.6rem] ${
           openCart ? 'opacity-100' : 'right-[100%] opacity-0'
         }`}
       ></div>

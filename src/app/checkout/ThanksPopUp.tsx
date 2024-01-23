@@ -25,7 +25,7 @@ function ThanksPopUp({
     <>
       <div
         ref={target2}
-        className=" fixed inset-0 top-[6rem] z-[99] overflow-auto bg-black/40 max-lg:top-[5.71rem]"
+        className=" fixed inset-0 top-[6rem] z-[99] overflow-auto bg-black/40 max-lg:top-[5.65rem]"
       >
         <section className="relative inset-x-[50%] top-[222px] z-[999] w-full max-w-[540px] translate-x-[-50%] max-md:top-[2rem] max-sm:mb-[50px]  max-sm:px-6">
           <div className="flex flex-col gap-[2.0625rem] rounded-lg bg-white p-12 max-sm:gap-6 max-[320px]:p-6">

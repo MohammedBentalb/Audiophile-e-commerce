@@ -69,7 +69,6 @@ function Nav() {
           aria-label="Desktop Navigation menu"
           className=" max-content flex items-center border-b border-[#FFFFFF33] py-[2.15rem] text-primary-white  max-xl:justify-between max-lg:py-8 max-md:gap-[2.625rem] max-sm:mx-0 max-sm:px-[1.5rem] max-[300px]:gap-[1rem] xl:gap-[12.3125rem]"
         >
-          {/* <div className="flex items-center gap-[2.625rem]"> */}
           <div
             role="button"
             aria-label="burger icon simulator"
@@ -98,7 +97,6 @@ function Nav() {
               className="h-[1.5625rem] w-[8.9375rem]"
             />
           </Link>
-          {/*  </div> */}
           <ul
             className=" flex items-center gap-[2.125rem] max-md:hidden"
             role="menu"

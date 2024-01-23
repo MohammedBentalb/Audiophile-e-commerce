@@ -12,21 +12,6 @@ import {
 } from '@/lib/zod/Schemas/productsSchema';
 
 async function DataCat({ category }: { category: string }) {
-  /*  const fetchCategory = async (category: string) => {
-    try {
-      const data = await fetch(
-        `http://localhost:3000/api/category/${category}`
-      );
-      if (!data.ok) throw new Error('data is not ok');
-      const response = await data.json();
-      const validatedData = AllProductSchema.safeParse(response);
-      if (!validatedData.success) throw new Error('no data available ');
-      return validatedData.data;
-    } catch (e) {
-      console.log('error loading data');
-      return [];
-    }
-  }; */
 
   const fetchCategory = async (category: string) => {
     try {
