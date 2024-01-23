@@ -27,7 +27,7 @@ async function ProductPreview({ data }: { data: ProductType | undefined }) {
           fill
           priority
           alt={`${data?.name} audiophile`}
-          src={`/${data?.image.desktop}`}
+          src={`${data?.image.desktop.substring(1)}`}
           className=" rounded-lg object-cover max-md:hidden"
           sizes="(min-width: 1160px) 540px, (min-width: 780px) 47.22vw, (min-width: 640px) calc(34.17vw + 21px), (min-width: 420px) 327px, calc(75vw + 27px)"
         />
@@ -35,7 +35,7 @@ async function ProductPreview({ data }: { data: ProductType | undefined }) {
           fill
           priority
           alt={`${data?.name} audiophile`}
-          src={`/${data?.image.tablet}`}
+          src={`${data?.image.tablet.substring(1)}`}
           className="mas-sm:hidden rounded-lg object-cover md:hidden"
           sizes="(min-width: 640px) calc(34.17vw + 21px), (min-width: 420px) 327px, calc(75vw + 27px)"
         />
@@ -43,7 +43,7 @@ async function ProductPreview({ data }: { data: ProductType | undefined }) {
           fill
           priority
           alt={`${data?.name} audiophile`}
-          src={`/${data?.image.mobile}`}
+          src={`${data?.image.mobile.substring(1)}`}
           className=" rounded-lg object-cover sm:hidden"
           sizes="(min-width: 420px) 327px, calc(75vw + 27px)"
         />

@@ -20,7 +20,7 @@ function ProductDetails({
         <Image
           alt={'product name'}
           fill
-          src={`/${product.image.desktop}`}
+          src={`${product.image.desktop.substring(1)}`}
           className="rounded-lg object-contain"
           sizes="(min-width: 1120px) 540px, (min-width: 780px) calc(46.25vw + 31px), calc(100vw - 48px)"
         />

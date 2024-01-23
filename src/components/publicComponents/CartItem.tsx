@@ -89,7 +89,7 @@ function CartItem({
               >
                 <Image
                   alt={`${item.name} Audiophile`}
-                  src={`/${item.image.mobile}`}
+                  src={`${item.image.mobile.substring(1)}`}
                   fill
                   className="select-none rounded-lg object-cover hover:opacity-60"
                   sizes=""
